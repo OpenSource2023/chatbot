@@ -54,3 +54,7 @@ policies:
   max_history: 5
   epochs: 100
   constrain_similarities: true
+
+storage:
+  # max_models 에 저장할 최대 모델 수를 지정합니다.
+  max_models: 5
