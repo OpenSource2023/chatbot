@@ -1,0 +1,30 @@
+# 대화 흐름 설정 (잘못되면 train 시 오류 발생)
+# 사용자의 발화에 따라(intent) 챗봇 반응(action) 기입하기
+
+version: "3.1"
+
+stories:
+
+- story: 추천후_추천종료
+  steps:
+  - intent: 시작_인사
+  - action: utter_시작인사
+  - intent: 사용자_요구
+  - action: utter_추천
+  - intent: 긍정
+  - action: utter_추천종료
+  - action: utter_종료인사
+
+- story: 추천후_재추천
+  steps:
+  - intent: 시작_인사
+  - action: utter_시작인사
+  - intent: 사용자_요구
+  - action: utter_추천
+  - intent: 부정
+  - action: utter_재추천
+  - intent: 사용자_요구
+  - action: utter_추천
+  - intent: 긍정
+  - action: utter_추천종료
+  - action: utter_종료인사

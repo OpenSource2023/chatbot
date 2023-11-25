@@ -1,0 +1,10 @@
+# 사용자와의 상호작용에 대한 정책을 정의하는 파일
+
+version: "3.1"
+
+rules:
+
+- rule: 종료 규칙
+  steps:
+  - intent: 종료_인사
+  - action: utter_종료인사

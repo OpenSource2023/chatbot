@@ -1,0 +1,17 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohpjTZKCUZSJpbGsaDKHMLIGmQmFxbGwsAR5Uh0Q==": "utter_시작인사",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohpjTZKCUZSJpbGsaDKHMLIGmQmFxLwNzSkpLUonhk7Si6SbEoFgAA/Ucc": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohpjTZKCUZSJpbGsaDKHMLIGmQmFxLwNzSkpLUonhk7Si6qWcRMR5IiSlNSjJOjgdTSTGlianGBrW1sQArkWe1": "utter_추천후",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohpjTZKCUZSJpbGsaDKHMLIGmQmFxLwNzSkpLUonhk7Si6qWcRMR5IiSlNSjJOjgdTSTGlianGBkR7IMXSBEgmWwIdl2KWbEKSFbEAYG+Lrw==": "action_listen",
+    "eJytT0EOwiAQ/AoP8EBttcBXxBBY9kCiaCh4IfzdbfWgp/bQy8xOMjs7e6ntwOoz4ctYyOERFaufwUR7R8W+4hamjJG8ZcJEnhBJZsV0gaMHwlF2ZqZREHILbSW35IzJ/K7/be93aMsDXhfnejALOV0s9nzzA14OhCCpnD/DsOOJ1erOC07poju1dn0DeIWnPQ==": "utter_재추천",
+    "eJytTzkOwyAQ/AoPSIFjJxxfCRGChQIpIREGN8h/z+YonAoKNzO70s6xl7oeSH0mv2gDOTyiJPU76GjuXpLfcgtz9hFvy+wT3oSIa5ZEFTg6QGRi0G9iHJEaWBu+JWef9Fb+p94vqOcBp4q1I+gPWVWMH2n3A05MiCCwnDvDtGNEs7p1nKI7H07dbZmBbeeW6/UFDq3GWQ==": "action_listen",
+    "eJytUUkOwyAM/AoP6IE0SVm+0lQIDAekllYEekH5e93lkPYCUnMZ25I9M7aPZdmRcovurjQkfw2SlHeigr44ST7F2c/JBezNs4vY4wOWSZIpw94CIhOdegbGEamGpcKbU3JRrce/prcTalnATtmYHtQrmClr19PmBawYEEGgOXuAYUOJqnVjOUV23o3NbpmGtef/WOu35XxEQg7w87PTA+5Q5oE=": "utter_종료인사",
+    "eJytUksOwiAQvQoHcNHaVihXEUNgYEGiaCi4Ib274yemLgxEu3nDJPM+Q2af5w3Jl2CvUkF0Z89Jfj6kVyfLyas5uilaj7NpsgFnnMc2ciISbA0g0rGV90IZYqNgLuimGG2QS/oHez2jmgWMSFp3IB9Fi6Rs11QvYMYeEUYMZ3bQr2hRjK4Na1CdtUN1Wqpgmfk/1fLfMjagIAP47Tje9OJxfDM63ABXKQvr": "action_listen",
+    "eJytT7sOwyAM/BU+oANp0ibwK6VCxnhAamlFoAvi3+s+hnZKhix3Pul8Pp9q24l6T/SwgDncohb1M9gIV9LiKy5hzhTZW2ZK7AmRZdbCFNx7ZBxVZ180TowSsC3klpwp2d/1v+3tDq15wJviXI/2Tc4UoF6ufsCrgREVl/NHHDY8sVgdSHIuTt2htfMTejSnaQ==": "utter_추천종료",
+    "eJytUMsOwiAQ/BU+wAO1rQV+RQyBZQ8kioaCF9J/d30camLSxvQys5vMzs7usU47Vm8J78ZCDteoWH0XJtoLKvZpzmHMGElbRkykCZHarJgusPdAOMjGPGkQhNzCtOBbcsZk5uNf09stWnOA18W5FsyLnC4WW776AC87QpAUzh+g23DFYnSLnHxBNP0/aUGInuII+PnuuffpAcUnyIw=": "action_listen",
+    "eJytUdsOwiAM/RU+wAfmNgf8ijMESh9IFM0GeyH7d+slRo0Ji9nLaZu055y2+zxvWL4MOGkD0Z+DYvmR6GBOqNizOPoxYqDeNOJAPT5QGRXrE2wdEHay0rfQCUJuYC7wphhx0O/jH9PrCS1ZwPXJ2hr0Pdg+Gaz54gWcbAhBkjm3g2ZFiaJ1g5x4QVTtP25BiJbsCPh57uXc5Qu/hL4+d7gCZnDotA==": "utter_종료인사",
+    "eJytUtsKgzAM/ZV+wB506mz7K+sobZoHYeuGtr4U/33ZBdlgoyK+nCSQnHMSckzTjqVbj6M2ELqrlyy9Eu3NBSV7F+duCOipNw7YU0/nqQySqQh7B4StKPUjtJywMDBleGMI2OvP8a/p7YSWLOBUtLYC/QxWRYNVsXgBJ2pCEGTOHaDeUCJr3WBBvMDLZo1b4LwhOxx+nns5d/7Cs9C6F5nHsy/yT+h0B7Y0Dh4=": "action_listen"
+  }
+}
