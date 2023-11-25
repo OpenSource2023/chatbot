@@ -23,6 +23,15 @@ intents:
   - 장소_공부방
   - 사용자_요구
 
+entities:
+  - place
+  - water
+  - size
+  - formaldehyde
+  - carbon_dioxide
+  - negative_ion
+  - relative_humidity
+
 # 챗봇이 특정 응답을 하는 데 사용되는 텍스트, 이미지 등을 정의
 # 사용자가 특정 의도에 대해 발화하면, 챗봇은 해당 의도에 대한 응답 중 하나를 선택하여 사용자에게 보낸다.
 responses:
