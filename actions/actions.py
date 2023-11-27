@@ -4,7 +4,7 @@
 # See this guide on how to implement these action:
 # https://rasa.com/docs/rasa/custom-actions
 
-import mysql.connector
+# import mysql.connector
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
@@ -16,22 +16,22 @@ class ActionRecommendPlants(Action):
         return "action_recommend_plants"
 
     def recommend_plants(self, user_input: Text) -> List[Text]:
-        
-        # MySQL 연결 설정
-        db_config = {
-            'host': 'MYSQL_HOST',
-            'user': 'MYSQL_USER',
-            'password': 'MYSQL_PASS',
-            'database': 'MYSQL_DATABASE'
-        }
-        conn = mysql.connector.connect(**db_config)
+      
+        # # MySQL 연결 설정
+        # db_config = {
+        #     'host': 'MYSQL_HOST',
+        #     'user': 'MYSQL_USER',
+        #     'password': 'MYSQL_PASS',
+        #     'database': 'MYSQL_DATABASE'
+        # }
+        # conn = mysql.connector.connect(**db_config)
 
-        # 데이터베이스에서 데이터 불러오기
-        query = "SELECT * FROM plant_data"
-        plant_data = pd.read_sql_query(query, conn)
+        # # 데이터베이스에서 데이터 불러오기
+        # query = "SELECT * FROM plant_data"
+        # plant_data = pd.read_sql_query(query, conn)
 
-        # 연결 닫기
-        conn.close()        
+        # # 연결 닫기
+        # conn.close()        
         
         # 식물 데이터 불러오기
         plant_data = pd.read_csv("plant_data.csv", encoding='euc-kr')
