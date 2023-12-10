@@ -14,9 +14,7 @@ intents:
   - 크기_소
   - 키우기_쉬움
   - 키우기_어려움
-  - 공기정화능력_상
-  - 공기정화능력_중
-  - 공기정화능력_하
+  - 공기정화능력
   - 장소_거실
   - 장소_화장실
   - 장소_부엌
@@ -28,9 +26,9 @@ entities:
   - water
   - size
   - formaldehyde
-  - carbon_dioxide
-  - negative_ion
-  - relative_humidity
+  - carbonDioxide
+  - negativeIon
+  - relativeHumidity
 
 # 챗봇이 특정 응답을 하는 데 사용되는 텍스트, 이미지 등을 정의
 # 사용자가 특정 의도에 대해 발화하면, 챗봇은 해당 의도에 대한 응답 중 하나를 선택하여 사용자에게 보낸다.
@@ -61,11 +59,9 @@ responses:
   - text: "다른 식물을 원하세요?"
   - text: "다른 식물도 보여드릴까요?"
 
-  utter_None:
-  - text: "잘 모르겠어요. 다시 입력해주세요."
-
 actions:
-  - respond_to_user_intent
+#  - respond_to_user_intent
+  - action_recommend_plants
 
 # 채팅 세션의 설정을 정의
 session_config:

@@ -10,7 +10,7 @@ stories:
   - intent: 시작_인사
   - action: utter_시작인사
   - intent: 사용자_요구
-  - action: utter_추천
+  - action: action_recommend_plants
   - intent: 긍정
   - action: utter_추천종료
   - action: utter_종료인사
@@ -20,11 +20,11 @@ stories:
   - intent: 시작_인사
   - action: utter_시작인사
   - intent: 사용자_요구
-  - action: utter_추천
+  - action: action_recommend_plants
   - intent: 부정
   - action: utter_재추천
   - intent: 사용자_요구
-  - action: utter_추천
+  - action: action_recommend_plants
   - intent: 긍정
   - action: utter_추천종료
   - action: utter_종료인사

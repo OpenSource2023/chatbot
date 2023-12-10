@@ -3,15 +3,18 @@
 # Server where the models are pulled from.
 # https://rasa.com/docs/rasa/model-storage#fetching-models-from-a-server
 
-#models:
-#  url: http://my-server.com/models/default_core@latest
-#  wait_time_between_pulls:  10   # [optional](default: 100)
+# models:
+#   url: "http://example.com/models/default_core@latest"
+#   wait_time_between_pulls: 10
 
 # Server which runs your custom actions.
 # https://rasa.com/docs/rasa/custom-actions
 
-#action_endpoint:
-#  url: "http://localhost:5055/webhook"
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+
+cors:
+  - "http://localhost:3000"  # 프론트엔드의 주소에 맞게 변경
 
 # Tracker store which is used to store the conversations.
 # By default the conversations are stored in memory.
