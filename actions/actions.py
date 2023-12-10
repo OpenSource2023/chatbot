@@ -18,7 +18,7 @@ class ActionRecommendPlants(Action):
     def recommend_plants(self, user_input: Text) -> List[Text]:
         
         # 사용자의 발화에서 추출한 entities에 대해 가중치 부여
-        user_entities = {"place": 0, "water": 0, "size": 0, "formaldehyde": 0, "carbon dioxide": 0, "negative ion": 0, "relative humidity": 0}
+        user_entities = {"place": 0, "water": 0, "size": 0, "formaldehyde": 0, "carbonDioxide": 0, "negativeIon": 0, "relativeHumidity": 0}
 
         # 사용자 발화에서 추출한 entities가 있을 경우 가중치 부여
         for index, entity in enumerate(user_entities.keys()):
@@ -26,7 +26,7 @@ class ActionRecommendPlants(Action):
                 user_entities[entity] = 1 + 0.1 * index  # 먼저 나온 entity일수록 더 높은 가중치 부여
 
         # CSV 파일을 읽기
-        plant_data = pd.read_csv("C:\\Temp\\hywu_23_2\\singmul\\chatenv\\plant_data.csv", encoding='euc-kr')
+        plant_data = pd.read_csv("C:\\Temp\\hywu_23_2\\singmul\\chatenv\\plant_data.csv", encoding='utf-8')
         
         # 열 이름에서 앞뒤 공백을 제거
         plant_data.columns = [col.strip() for col in plant_data.columns]
@@ -44,8 +44,12 @@ class ActionRecommendPlants(Action):
         for index, plant in plant_data.iterrows():
             print(f"Plant keys: {plant.keys()}")
             print(f"User entities keys: {user_entities.keys()}")
+            
+            # 각 엔터티에 대해 사용자 입력과 식물 데이터가 일치하면 1을 더하고, 일치하지 않으면 0을 더하여 스코어를 계산
             score = sum(user_entities[attr] * (1 if plant[attr] == user_entities[attr] else 0) for attr in user_entities)
-            recommendations = recommendations.append({"plant": plant["plant"], "score": score}, ignore_index=True)
+            
+            # 식물 name과 score를 가지는 DataFrame 생성 후, recommendations에 추가
+            recommendations = pd.concat([recommendations, pd.DataFrame({"plant": [plant["name"]], "score": [score]})], ignore_index=True)
 
         # 이미 추천한 식물은 제외
         recommendations = recommendations[~recommendations["plant"].isin(recommended_plants)]
@@ -53,33 +57,54 @@ class ActionRecommendPlants(Action):
         # 점수가 높은 순으로 정렬하고 상위 n개 추천
         top_recommendations = recommendations.sort_values(by="score", ascending=False).head(num_recommendations)
 
-        # 추천된 식물 리스트에 추가
+        # 추천된 식물을 리스트에 추가
         recommended_plants.extend(top_recommendations["plant"])
 
-        return top_recommendations["plant"].tolist()
+        # 필요한 컬럼만 선택하여 반환
+        selected_columns = ['photo', 'name', 'place', 'water', 'size', 'formaldehyde',
+                             'carbonDioxide', 'negativeIon', 'relativeHumidity']
+        
+        recommended_plants_details = plant_data[plant_data["name"].isin(recommended_plants)][selected_columns].to_dict(orient='records')
+
+        # 추천된 식물들의 상세 정보 반환
+        return recommended_plants_details
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         # debugging
-        print("ActionRecommendPlants is executed.")
+        print("ActionRecommendPlants가 실행되었습니다.")
         
         # 사용자의 발화를 가져와서 추천 알고리즘에 전달
         user_input = tracker.latest_message.get("text", "")
-        print(user_input)
+        print(f"사용자의 메시지: {user_input}")
         
         # 추천 알고리즘에 전달하여 추천 받기
         recommendations = self.recommend_plants(user_input)
-        print(recommendations)
+        print(f"사용자 메시지에 따른 recommend_plants 함수 결과: {recommendations}")
 
         # 추천된 식물에 대한 메시지를 사용자에게 전송
         if recommendations:
-            plant_list = ', '.join(recommendations)
-            print(plant_list)
-            dispatcher.utter_message(text=f"다음 식물을 추천해 드립니다: {plant_list}.")
-        else:
-            dispatcher.utter_message(text="죄송합니다. 현재 조건에 맞는 식물을 찾을 수 없습니다.")
+            print(f"식물 추천")
+            
+            # 사용자에게 전송할 텍스트 생성
+            message_text = ""
+            for idx, plant_info in enumerate(recommendations):
+                message_text += f"{idx+1}번째 식물: {plant_info['name']}\n"
+                message_text += f"추천 장소: {plant_info['place']}\n"
+                message_text += f"물 주기: {plant_info['water']}\n"
+                message_text += f"크기: {plant_info['size']}\n"
+                message_text += f"포름알데히드 제거 수치: {plant_info['formaldehyde']}\n"
+                message_text += f"이산화탄소 제거 수치: {plant_info['carbonDioxide']}\n"
+                message_text += f"음이온 발생량: {plant_info['negativeIon']}\n"
+                message_text += f"상대습도: {plant_info['relativeHumidity']}\n"
+                message_text += f""
 
-        return []
+            dispatcher.utter_message(text=f"다음 식물을 추천해 드립니다: \n{message_text}")
+        else:
+            print("식물 추천 실패")
+            dispatcher.utter_message(text="죄송합니다. 현재 조건에 맞는 식물을 찾을 수 없습니다.")
+            
+            return []
 
 '''
 class RespondToUserIntent(Action):

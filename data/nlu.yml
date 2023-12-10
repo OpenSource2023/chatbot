@@ -122,7 +122,7 @@ nlu:
     - [적당한 크기](size:중)에 키우기 [쉬운](water:적게) 식물 추천
     - 크기가 [중간 정도](size:중)에 키우기 [편한](water:적게) 식물 찾아줘
     - 나 [내 방](place:공부방)에 식물을 하나 두려고 하는데 [책상에 둘 거](size:소)라 좀 [작았으면](size:소) 좋겠어
-    - [거실](place:거실)에 둘 식물 추천
+    - [거실](place:거실)에 둘 식물
     - [화장실](place:화장실)에 둘 식물 추천
     - [부엌](place:부엌)에 둘 식물 추천
     - [매일 물 줘야](water:자주)하는 식물
@@ -132,9 +132,9 @@ nlu:
     - 실내의 공기를 [좋게 하는](formaldehyde) 식물
     - 공기 [정화능력이 뛰어난](formaldehyde) 식물
     - 공기 [정화에 탁월한](formaldehyde) 식물
-    - 실내 공기를 [맑게 해주는](formaldehyde) 식물
+    - 실내 공기를 [맑게 해주는](formaldehyde) 식물 추천
     - [부엌에 두기 좋은](carbonDioxide) 식물
-    - [요리](carbonDioxide)할 때 좋은 식물
+    - [요리](carbonDioxide)할 때 좋은 식물 추천
     - [연기](carbonDioxide) 정화에 좋은
     - [가스렌지](carbonDioxide) 옆에 두기 좋은
     - [음이온이 발생](negativeIon)하는 식물
