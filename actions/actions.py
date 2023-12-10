@@ -96,8 +96,7 @@ class ActionRecommendPlants(Action):
                 message_text += f"포름알데히드 제거 수치: {plant_info['formaldehyde']}\n"
                 message_text += f"이산화탄소 제거 수치: {plant_info['carbonDioxide']}\n"
                 message_text += f"음이온 발생량: {plant_info['negativeIon']}\n"
-                message_text += f"상대습도: {plant_info['relativeHumidity']}\n"
-                message_text += f""
+                message_text += f"상대습도: {plant_info['relativeHumidity']}\n\n"
 
             dispatcher.utter_message(text=f"다음 식물을 추천해 드립니다: \n{message_text}")
         else:
@@ -105,29 +104,3 @@ class ActionRecommendPlants(Action):
             dispatcher.utter_message(text="죄송합니다. 현재 조건에 맞는 식물을 찾을 수 없습니다.")
             
             return []
-
-'''
-class RespondToUserIntent(Action):
-    def name(self) -> Text:
-        return "respond_to_user_intent"
-
-    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        # 최근 메시지에서 사용자 의도 추출
-        intent = tracker.latest_message['intent'].get('name')
-
-        # 사용자 의도에 따라 다른 응답 생성
-        if intent == '시작_인사':
-            dispatcher.utter_message("안녕하세요! 어떻게 도와드릴까요?")
-        elif intent == '종료_인사':
-            dispatcher.utter_message("안녕히 가세요! 다음에 또 도움이 필요하시면 오세요.")
-        elif intent == '사용자_요구':
-            dispatcher.utter_message("무엇을 원하시나요?")
-        elif intent == '긍정':
-            dispatcher.utter_message("감사합니다! 도움이 필요하신 경우 언제든 물어봐주세요.")
-        elif intent == '부정':
-            dispatcher.utter_message("죄송해요. 다른 방법으로 도움을 드리고 싶어요. 무엇이 문제인지 말해주시겠어요?")
-        else:
-            dispatcher.utter_message("죄송합니다. 이해할 수 없는 요청이에요.")
-
-        return []
-'''
