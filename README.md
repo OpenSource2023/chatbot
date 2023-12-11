@@ -35,3 +35,5 @@ print(f"The file's encoding is: {encoding}")
 
 
 # stories.yml
+
+# 필요하면 다시 붙이기

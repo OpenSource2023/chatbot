@@ -1,0 +1,586 @@
+[
+  {
+    "text": "안녕하세요!",
+    "intent": "시작_인사",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "안녕?",
+    "intent": "시작_인사",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "있잖아",
+    "intent": "시작_인사",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "반가워",
+    "intent": "시작_인사",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "뭐해?",
+    "intent": "시작_인사",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "잘 있어",
+    "intent": "종료_인사",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "잘가",
+    "intent": "종료_인사",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "고마워",
+    "intent": "종료_인사",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "갈게",
+    "intent": "종료_인사",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "감사합니다",
+    "intent": "종료_인사",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "좋아",
+    "intent": "긍정",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "그래",
+    "intent": "긍정",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "마음에 들어",
+    "intent": "긍정",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "오",
+    "intent": "긍정",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "좋은 것 같아",
+    "intent": "긍정",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "아냐",
+    "intent": "부정",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "별로야",
+    "intent": "부정",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "싫어",
+    "intent": "부정",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "글쎄",
+    "intent": "부정",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "다시 해줘",
+    "intent": "부정",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "크기는 중간이고, 키우기 쉬운 식물 찾아줘",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "소형이면서 공기 정화능력이 좋은 식물 추천해줘",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "크기가 적당하고 키우기 편한 식물 추천해줘",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "크기가 크면서 키우기 편한 식물 추천해줘",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "적당한 크기에 키우기 쉬운 식물 추천",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "크기가 중간 정도에 키우기 편한 식물 찾아줘",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "키우기 쉬운",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "단순한 관리가 필요한",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "특별한 관리가 필요 없는",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "물을 적게 줘도 되는",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "나 내 방에 식물을 하나 두려고 하는데 책상에 둘 거라 좀 작았으면 좋겠어",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "거실에 둘 식물",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "거실에서 키울",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "거실에 둘",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "넓은 공간에서 키울",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "화장실에 둘 식물 추천",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "물에 강한",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "화장실에 둘",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "화장실에서 키울",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "습기에 강한",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "부엌에 둘 식물 추천",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "일산화탄소를 제거",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "부엌에서 키울",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "피톤치드",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "머리가 맑아지는",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "방에 둘",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "책상에 둘",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "매일 물 줘야하는 식물",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "주 3회 물 줘야 하는 식물",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "공기가 좋아지는 식물",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "공기 정화되는 식물",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "실내의 공기를 좋게 하는 식물",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "공기 정화능력이 뛰어난 식물",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "공기 정화에 탁월한 식물",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "실내 공기를 맑게 해주는 식물 추천",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "공기 정화능력이 뛰어난",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "공기 정화에 탁월한",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "실내 공기를 맑게 해주는",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "실내의 공기를 좋게 하는",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "부엌에 두기 좋은 식물",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "요리할 때 좋은 식물 추천",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "연기 정화에 좋은",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "가스렌지 옆에 두기 좋은",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "음이온이 발생하는 식물",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "음이온이 나오는 식물",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "크기는 큰 것으로",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "적당한 크기의 식물이 좋아",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "소형 식물이면서 물을 적게 주는 게 좋겠어",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "거실에 두기 좋은 음이온 발생 식물",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "매일 물 줘야 하는데 음이온이 나오는 식물 추천해줘",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "피톤치드 풍부한 중간 크기의 식물 찾아줘",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "화장실에 두기 좋은 물을 적게 주는 식물을 알려줘",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "음이온 발생이 있는 큰 식물 찾아봐줘",
+    "intent": "사용자_요구",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  }
+]

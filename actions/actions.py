@@ -15,16 +15,22 @@ class ActionRecommendPlants(Action):
     def name(self) -> Text:
         return "action_recommend_plants"
 
-    def recommend_plants(self, user_input: Text) -> List[Text]:
+    def recommend_plants(self, user_entity_list: Text) -> List[Text]:
+        
+        print(f"사용자 발화 중 나온 entity: {user_entity_list}\n")
         
         # 사용자의 발화에서 추출한 entities에 대해 가중치 부여
         user_entities = {"place": 0, "water": 0, "size": 0, "formaldehyde": 0, "carbonDioxide": 0, "negativeIon": 0, "relativeHumidity": 0}
 
         # 사용자 발화에서 추출한 entities가 있을 경우 가중치 부여
         for index, entity in enumerate(user_entities.keys()):
-            if entity in user_input:
-                user_entities[entity] = 1 + 0.1 * index  # 먼저 나온 entity일수록 더 높은 가중치 부여
-
+            if entity in user_entity_list:
+                print(f"{entity}가 {user_entity_list}안에 있습니다.\n")
+                print(f"user_entities[entity]: {user_entities[entity]}\n")
+                user_entities[entity] = 10 - 1 * (index+1)  # 먼저 나온 entity일수록 더 높은 가중치 부여
+            else:
+                print(f"{entity}가 {user_entity_list}안에 없습니다.\n")
+        
         # CSV 파일을 읽기
         plant_data = pd.read_csv("C:\\Temp\\hywu_23_2\\singmul\\chatenv\\plant_data.csv", encoding='utf-8')
         
@@ -42,14 +48,17 @@ class ActionRecommendPlants(Action):
 
         # 각 식물에 대해 점수 계산
         for index, plant in plant_data.iterrows():
-            print(f"Plant keys: {plant.keys()}")
-            print(f"User entities keys: {user_entities.keys()}")
-            
+            print(f"csv의 열 이름: \n{plant.keys()}\n")
+            print(f"user_entities의 keys: \n{user_entities.keys()}\n")
+            print(f"user_entities의 values: \n{user_entities.values()}\n")
+
             # 각 엔터티에 대해 사용자 입력과 식물 데이터가 일치하면 1을 더하고, 일치하지 않으면 0을 더하여 스코어를 계산
             score = sum(user_entities[attr] * (1 if plant[attr] == user_entities[attr] else 0) for attr in user_entities)
             
             # 식물 name과 score를 가지는 DataFrame 생성 후, recommendations에 추가
             recommendations = pd.concat([recommendations, pd.DataFrame({"plant": [plant["name"]], "score": [score]})], ignore_index=True)
+            
+            print(f"식물 이름: {plant['name']}, \nScore: {score}\n")
 
         # 이미 추천한 식물은 제외
         recommendations = recommendations[~recommendations["plant"].isin(recommended_plants)]
@@ -71,21 +80,21 @@ class ActionRecommendPlants(Action):
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
-        # debugging
-        print("ActionRecommendPlants가 실행되었습니다.")
+        # 사용자의 발화를 가져오기
+        user_input = tracker.latest_message.get("text")
+        print(f"사용자의 발화: {user_input}\n")
         
-        # 사용자의 발화를 가져와서 추천 알고리즘에 전달
-        user_input = tracker.latest_message.get("text", "")
-        print(f"사용자의 메시지: {user_input}")
+        # 사용자의 발화에서 entity 추출
+        user_entity_list = list(set(entity["entity"] for entity in tracker.latest_message["entities"]))
+        print(f"사용자의 entity: {user_entity_list}\n")
         
         # 추천 알고리즘에 전달하여 추천 받기
-        recommendations = self.recommend_plants(user_input)
-        print(f"사용자 메시지에 따른 recommend_plants 함수 결과: {recommendations}")
+        recommendations = self.recommend_plants(user_entity_list)
+        print(f"사용자 메시지에 따른 recommend_plants 함수 결과: \n{recommendations}\n")
 
         # 추천된 식물에 대한 메시지를 사용자에게 전송
         if recommendations:
-            print(f"식물 추천")
-            
+                        
             # 사용자에게 전송할 텍스트 생성
             message_text = ""
             for idx, plant_info in enumerate(recommendations):

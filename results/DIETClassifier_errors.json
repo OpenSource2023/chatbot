@@ -1,0 +1,557 @@
+[
+  {
+    "text": "크기는 중간이고, 키우기 쉬운 식물 찾아줘",
+    "entities": [
+      {
+        "start": 4,
+        "end": 6,
+        "value": "중",
+        "entity": "size"
+      },
+      {
+        "start": 14,
+        "end": 16,
+        "value": "적게",
+        "entity": "water"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "water",
+        "start": 14,
+        "end": 16,
+        "confidence_entity": 0.9800742268562317,
+        "value": "적게",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "소형이면서 공기 정화능력이 좋은 식물 추천해줘",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "소",
+        "entity": "size"
+      },
+      {
+        "start": 15,
+        "end": 17,
+        "value": "적게",
+        "entity": "water"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "water",
+        "start": 15,
+        "end": 17,
+        "confidence_entity": 0.45550572872161865,
+        "value": "적게",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "적당한 크기에 키우기 쉬운 식물 추천",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "중",
+        "entity": "size"
+      },
+      {
+        "start": 12,
+        "end": 14,
+        "value": "적게",
+        "entity": "water"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "water",
+        "start": 12,
+        "end": 14,
+        "confidence_entity": 0.965833842754364,
+        "value": "적게",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "크기가 중간 정도에 키우기 편한 식물 찾아줘",
+    "entities": [
+      {
+        "start": 4,
+        "end": 9,
+        "value": "중",
+        "entity": "size"
+      },
+      {
+        "start": 15,
+        "end": 17,
+        "value": "적게",
+        "entity": "water"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "water",
+        "start": 15,
+        "end": 17,
+        "confidence_entity": 0.9986887574195862,
+        "value": "적게",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "단순한 관리가 필요한",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "적게",
+        "entity": "water"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "나 내 방에 식물을 하나 두려고 하는데 책상에 둘 거라 좀 작았으면 좋겠어",
+    "entities": [
+      {
+        "start": 2,
+        "end": 5,
+        "value": "공부방",
+        "entity": "place"
+      },
+      {
+        "start": 22,
+        "end": 29,
+        "value": "소",
+        "entity": "size"
+      },
+      {
+        "start": 33,
+        "end": 37,
+        "value": "소",
+        "entity": "size"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "size",
+        "start": 33,
+        "end": 37,
+        "confidence_entity": 0.99542635679245,
+        "value": "소",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "거실에 둘 식물",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "거실",
+        "entity": "place"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "거실에서 키울",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "거실",
+        "entity": "place"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "거실에 둘",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "거실",
+        "entity": "place"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "넓은 공간에서 키울",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "거실",
+        "entity": "place"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "화장실에 둘 식물 추천",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "화장실",
+        "entity": "place"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "화장실에 둘",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "화장실",
+        "entity": "place"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "화장실에서 키울",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "화장실",
+        "entity": "place"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "부엌에 둘 식물 추천",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "부엌",
+        "entity": "place"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "일산화탄소를 제거",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "부엌",
+        "entity": "place"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "부엌에서 키울",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "부엌",
+        "entity": "place"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "매일 물 줘야하는 식물",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "자주",
+        "entity": "water"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "주 3회 물 줘야 하는 식물",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "보통",
+        "entity": "water"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "water",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.5305338501930237,
+        "value": "주 3회 물 줘야 하는",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "실내의 공기를 좋게 하는 식물",
+    "entities": [
+      {
+        "start": 8,
+        "end": 13,
+        "value": "좋게 하는",
+        "entity": "formaldehyde"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "formaldehyde",
+        "start": 4,
+        "end": 13,
+        "confidence_entity": 0.6140602231025696,
+        "value": "공기를 좋게 하는",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "실내 공기를 맑게 해주는 식물 추천",
+    "entities": [
+      {
+        "start": 7,
+        "end": 13,
+        "value": "맑게 해주는",
+        "entity": "formaldehyde"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "formaldehyde",
+        "start": 3,
+        "end": 13,
+        "confidence_entity": 0.5889244079589844,
+        "value": "공기를 맑게 해주는",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "공기 정화능력이 뛰어난",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "공기 정화능력",
+        "entity": "formaldehyde"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "formaldehyde",
+        "start": 3,
+        "end": 8,
+        "confidence_entity": 0.5259689688682556,
+        "value": "정화능력이",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "공기 정화에 탁월한",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "공기 정화",
+        "entity": "formaldehyde"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "formaldehyde",
+        "start": 3,
+        "end": 6,
+        "confidence_entity": 0.5673549771308899,
+        "value": "정화에",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "부엌에 두기 좋은 식물",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "부엌에 두기 좋은",
+        "entity": "carbonDioxide"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "place",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.4982905685901642,
+        "value": "부엌에 두기 좋은",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "요리할 때 좋은 식물 추천",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "요리",
+        "entity": "carbonDioxide"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "음이온이 발생하는 식물",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "음이온이 발생",
+        "entity": "negativeIon"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "적당한 크기의 식물이 좋아",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "중",
+        "entity": "size"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "소형 식물이면서 물을 적게 주는 게 좋겠어",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "소",
+        "entity": "size"
+      },
+      {
+        "start": 9,
+        "end": 14,
+        "value": "적게",
+        "entity": "water"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "water",
+        "start": 9,
+        "end": 14,
+        "confidence_entity": 0.9972535967826843,
+        "value": "적게",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "피톤치드 풍부한 중간 크기의 식물 찾아줘",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "공부방",
+        "entity": "place"
+      },
+      {
+        "start": 9,
+        "end": 14,
+        "value": "중",
+        "entity": "size"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "place",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9982665777206421,
+        "value": "공부방",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "음이온 발생이 있는 큰 식물 찾아봐줘",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "음이온 발생",
+        "entity": "negativeIon"
+      },
+      {
+        "start": 11,
+        "end": 15,
+        "value": "대",
+        "entity": "size"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "size",
+        "start": 11,
+        "end": 15,
+        "confidence_entity": 0.6892539858818054,
+        "value": "대",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]
