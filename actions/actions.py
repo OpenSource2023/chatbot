@@ -61,9 +61,12 @@ class ActionRecommendPlants(Action):
 
         # 이미 추천한 식물은 제외
         recommendations = recommendations[~recommendations["plant"].isin(recommended_plants)]
+        
+        # score에 따라 내림차순으로 정렬
+        recommendations = recommendations.sort_values(by="score", ascending=False)
 
         # 점수가 높은 순으로 정렬하고 상위 n개 추천
-        top_recommendations = recommendations.sort_values(by="score", ascending=False).head(num_recommendations)
+        top_recommendations = recommendations.head(num_recommendations)
         
         for idx, row in top_recommendations.iterrows():
             print(f"{idx + 1}순위 식물: {row['plant']} - 점수: {row['score']}점\n")
