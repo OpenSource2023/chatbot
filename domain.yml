@@ -37,9 +37,9 @@ responses:
   - text: "다시 오시길 기다릴게요!"
 
   utter_추천:
-  - text: "이런 식물 어떠세요?: {recommended_plants}"
-  - text: "당신만을 위해 준비한 식물이에요!: {recommended_plants}"
-  - text: "마음에 드는 식물이 있으신가요?: {recommended_plants}"
+  - text: "이런 식물 어떠세요?"
+  - text: "당신만을 위해 준비한 식물이에요!"
+  - text: "마음에 드는 식물이 있으신가요?"
 
   utter_추천종료:
   - text: "마음에 드셔서 다행이에요!"
